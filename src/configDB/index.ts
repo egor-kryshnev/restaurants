@@ -1,0 +1,1 @@
+export const getDbConnectionString: string = process.env.MONGODB_CONNECTIONSTRING || "mongodb://127.0.0.1:27017/restaurants"
