@@ -22,3 +22,25 @@ RestaurantChainRouter.get('/', async (req: Request, res: Response) => {
         res.status(500).send(err);
     }
 });
+
+RestaurantChainRouter.get('/check', async (req, res) => {
+    try{
+        let numberr: number = Number(req.query.number);
+        console.log(numberr);
+        var tryy: String = numberr.toFixed(1);
+        
+        let objArr: { number: number }[] = [ { number: 1.2 }, { number: 1.3 }, { number: 1.4 } ];
+        let check = objArr.reduce((a: number, b) => { return a + b.number; }, 0);
+        console.log(check);
+
+
+        res.status(200).send({ number: Number(tryy) });
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+    }
+});
+
+// function round(value, decimals) {
+//     return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+// }
