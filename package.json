@@ -2,11 +2,11 @@
   "name": "restaurant",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
-    "start": "npm run tsc && node src/server/index.js"
+    "start": "npm run tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
