@@ -4,6 +4,7 @@
 
 Option A:
 1. Need to run MongoDB on computer with port 27017
+2. Run in Terminal: `npm install`
 2. Run in Terminal: `npm run build`
 3. Run in Terminal: `npm start`
 
