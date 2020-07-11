@@ -1,6 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { Restaurant, IRestaurant } from '../models/restaurant.model';
-import { RestaurantChain, IRestaurantChain } from '../models/restaurantChain.model'
+import { RestaurantChain } from '../models/restaurantChain.model'
 
 export const RestaurantChainRouter: Router = Router();
 

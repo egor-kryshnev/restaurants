@@ -17,12 +17,7 @@ const RestaurantSchema = new Schema({
     rating: { type: Number, required: true },
     address: { type: String, required: true },
     is_deleted: { type: Boolean, required: true }
-}
-// , { _id : false }
-// , {
-//     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
-// });
-);
+});
 RestaurantSchema.set("versionKey", false);
 
 export const Restaurant = mongoose.model<IRestaurant>('restaurant', RestaurantSchema);

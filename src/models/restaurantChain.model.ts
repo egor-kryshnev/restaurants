@@ -18,11 +18,7 @@ const RestaurantChainSchema = new Schema({
         { type: String, ref: "restaurant" }
     ]
 
-}
-// , {
-//     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
-// });
-);
+});
 RestaurantChainSchema.set("versionKey", false);
 
 export const RestaurantChain = mongoose.model<IRestaurantChain>('restaurantChain', RestaurantChainSchema);

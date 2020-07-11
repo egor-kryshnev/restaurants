@@ -1,13 +1,12 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import { body } from 'express-validator';
 import { getDbConnectionString } from './configDB';
 import { RestaurantRouter } from './routers/restaurants.router';
 import { RestaurantChainRouter } from './routers/restaurantChain.router';
 
-// Create a new express app instance
-const port = process.env.PORT || 3000;
+
+const port = process.env.PORT || 8080;
 const app: express.Application = express();
 
 mongoose.connect(getDbConnectionString, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
