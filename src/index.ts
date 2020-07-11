@@ -14,10 +14,6 @@ mongoose.connect(getDbConnectionString, { useCreateIndex: true, useNewUrlParser:
 
 app.use(bodyParser.json());
 
-app.get("/", function (req: express.Request, res: express.Response) {
-    res.send("Hello World!");
-});
-
 app.use('/restaurant', RestaurantRouter);
 app.use('/restaurantChain', RestaurantChainRouter);
 
